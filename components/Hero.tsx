@@ -28,7 +28,7 @@ const Hero = () => {
       heroTitle={data?.heroTitle}
       heroText={<h1 className="h1 mb-4">{"Component Library"}</h1>}
       primaryButton={{
-        icon: <></>,
+        icon: <Icon icon="lucide:arrow-down" />,
         label: "Get Started",
         variant: "default",
         link: data?.cta?.contact_me,

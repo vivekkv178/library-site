@@ -6,7 +6,7 @@ const Hero = () => {
   const data = {
     heroTitle: "Typescript & React",
     heroDescription:
-      "Say goodbye to manual, time-consuming tasks. Let us handle the heavy lifting with ready to use UI components and Javascript functions.",
+      "Say goodbye to manual, time-consuming tasks. Let library handle the heavy lifting with ready to use UI components and Javascript functions.",
     cta: {
       contact_me: "/contact",
       download_cv:
@@ -14,33 +14,39 @@ const Hero = () => {
     },
   };
   return (
-    <HeroComponent
-      NavigationComponent={Link}
-      heroImg={
-        <div className="">
-          <img
-            src="/undraw_Asset_selection.png"
-            className="w-full h-full -mt-20"
-          />
-        </div>
-      }
-      heroDescription={data?.heroDescription!}
-      heroTitle={data?.heroTitle}
-      heroText={<h1 className="h1 mb-4">{"Component Library"}</h1>}
-      primaryButton={{
-        icon: <Icon icon="lucide:arrow-down" />,
-        label: "Get Started",
-        variant: "default",
-        link: data?.cta?.contact_me,
-      }}
-      secondaryButton={{
-        icon: <Icon icon="lucide:github" />,
-        label: "Github",
-        variant: "default",
-        link: data?.cta?.download_cv,
-        newTab: true,
-      }}
-    />
+    <div className="mb-20">
+      <HeroComponent
+        NavigationComponent={Link}
+        heroImg={
+          <div className="hidden xl:flex">
+            {/* <img
+              src="/undraw_Asset_selection.png"
+              className="w-full h-full -mt-20 rounded-lg"
+            /> */}
+            <img
+              src="https://raw.githubusercontent.com/vivekkv178/cdn/main/library/Hero.png"
+              className="w-full h-full -mt-20 rounded-lg"
+            />
+          </div>
+        }
+        heroDescription={data?.heroDescription!}
+        heroTitle={data?.heroTitle}
+        heroText={<h1 className="h1 mb-4">{"Component Library"}</h1>}
+        primaryButton={{
+          icon: <Icon icon="lucide:arrow-down" />,
+          label: "Get Started",
+          variant: "default",
+          link: "#storybook",
+        }}
+        secondaryButton={{
+          icon: <Icon icon="lucide:github" />,
+          label: "Github",
+          variant: "default",
+          link: "https://github.com/vivekkv178/library",
+          newTab: true,
+        }}
+      />
+    </div>
   );
 };
 

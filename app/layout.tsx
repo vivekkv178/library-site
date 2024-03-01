@@ -15,6 +15,27 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     `${process.env.NEXT_PUBLIC_CDN_PATH}/library/Thumbnail.png`
   ),
+  openGraph: {
+    title: "Component Library",
+    description:
+      "Ready to use React components and  functions available out of the box.",
+    url: "https://library-site-eight.vercel.app/",
+    siteName: "Component Library",
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_CDN_PATH}/library/Thumbnail.png`, // Must be an absolute URL
+        width: 800,
+        height: 600,
+      },
+      {
+        url: `${process.env.NEXT_PUBLIC_CDN_PATH}/library/Thumbnail.png`, // Must be an absolute URL
+        width: 1800,
+        height: 1600,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

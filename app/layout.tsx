@@ -25,12 +25,12 @@ export const metadata: Metadata = {
       {
         url: `${process.env.NEXT_PUBLIC_CDN_PATH}/library/Thumbnail.png`, // Must be an absolute URL
         width: 800,
-        height: 800,
+        height: 1000,
       },
       {
         url: `${process.env.NEXT_PUBLIC_CDN_PATH}/library/Thumbnail.png`, // Must be an absolute URL
         width: 1800,
-        height: 1800,
+        height: 2000,
       },
     ],
     locale: "en_US",

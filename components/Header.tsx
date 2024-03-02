@@ -21,7 +21,7 @@ const Header = () => {
     <MarketingHeader
       logoProps={{
         logoUrl:
-          "https://raw.githubusercontent.com/vivekkv178/cdn/main/portfolio/logo.png",
+          "https://raw.githubusercontent.com/vivekkv178/cdn/main/library/logo.png",
         NavigationComponent: Link,
       }}
       navbarProps={{
